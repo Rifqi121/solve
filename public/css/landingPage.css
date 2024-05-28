@@ -1,0 +1,400 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#gradient-color {
+    background-color: #ff2400;
+    background-image: linear-gradient(25deg, #ff2400 0%, #990000 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 20px;
+    padding-top: 70px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+#logo-header {
+    height: 70px;
+    margin: 16px 20px 16px 50px;
+}
+
+header ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: 700;
+    display: flex;
+    align-content: center;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+header ul li a:hover {
+    font-size: 1.2rem;
+    color: #0D6EFD;
+}
+
+#about-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about {
+    width: 50vw;
+    padding: 50px;
+    color: white;
+}
+
+#about p {
+    margin-top: 12px;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+#login, #register {
+    width: 50vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login p, #register p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+#login h3, #register h3 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat'; 
+    z-index: 1111;
+    border: 3px solid transparent;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 3px solid #0D6EFD;
+}
+
+#masuk {
+    padding: 10px;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    background-color: #0D6EFD;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: ease 0.3s;
+    width: 100%;
+}
+
+#masuk:hover {
+    background-color: #0d6dfdc5;
+}
+
+#forgotpw a, #buatakun {
+    font-size: 0.8rem;
+    color: white;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#buatakun {
+    text-align: center;
+}
+
+#registrasi-btn, #masuk-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    transition: ease 0.3s;
+    width: 80%;
+}
+
+#registrasi-btn:hover, #masuk-btn:hover {
+    background-color: rgba(128, 128, 128, 0.459);
+    color: white;
+}
+
+#register {
+    display: none;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+    padding: 50px;
+}
+
+.feature-card {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card p {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-top: 12px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.feature-card img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#feature-card-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#feature-card-caption p {
+    font-weight: 600;
+}
+
+#feature-card-caption h3 {
+    color: #990000;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+#guide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #990000;
+    background-image: linear-gradient(25deg, #ff2400 0%, #990000 100%);
+}
+
+#guide h3 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#guide iframe {
+    margin-bottom: 60px;
+}
+
+#stat-first-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 50px;
+}
+
+.stats-card {
+    padding: 30px;
+    background-color: #e9ecef;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card h3 {
+    margin-bottom: 20px;
+}
+
+.stats-card span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff2400;
+}
+
+#chart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: row;
+    margin: 0px 50px 50px 50px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#chart-container h3 {
+    margin-bottom: 20px;
+}
+
+#live-chart {
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    background-color: #e9ecef;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    height: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+#donut-chart {
+    width: 30%;
+}
+
+#chart-legend {
+    margin-left: 70px;
+}
+
+#chart-legend ul li {
+    list-style-type: none;
+    margin-bottom: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+#chart-legend ul li span {
+    font-size: 1.5rem;
+    margin-left: 12px;
+    color: #ff2400;
+}
+
+#ketuntasan {
+    height: 300px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+
+}
+
+.socmed-icon {
+    width: 25px;
+}
+
+#socmed-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#socmed-contact h5 {
+    margin-bottom: 20px;
+}
+
+#socmed-contact ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us h5 {
+    margin-bottom: 12px;
+}
+
+
+#contact-us ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    margin-bottom: 12px;
+}
+
+#contact-us ul li p{
+    font-size: 0.6rem;
+    margin-left: 12px;
+}
+
+#contact-us ul li div {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+
+#copyright {
+    border-top: 0.01em solid gray;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 0.6rem;
+}
+

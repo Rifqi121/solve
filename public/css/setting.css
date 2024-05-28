@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    padding-left: 20vw;
+    padding-top: 120px;
+    background-color: #F5F5F5;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #990000;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    
+}
+
+#logo-header {
+    height: 60px;
+    margin: 12px 20px 12px 20px;
+}
+
+#search-container { 
+    display: flex;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#search {
+    border-radius: 20px;
+    border: none;
+    padding: 1px 20px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+
+#profil {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+header form{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+#logout {
+    display: flex;
+    align-content: center;
+    justify-content: center;   
+    background-color: #990000;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#logout a {
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#logout button {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 1rem;
+    size: 20px;
+    width: 150px;
+    height: 100%;
+}
+
+#logout a:hover {
+    background-color: grey;
+    color: black;
+}
+
+#logout button:hover {
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+aside{
+    background-color: transparent;
+    width: 20vw;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside ul li{
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-radius: 0.8rem;
+    width: 14vw;
+    transition: 0.2s ease;
+}
+
+aside ul li:hover {
+    background-color: #e9ecef;
+    color: #990000;
+    cursor: pointer;
+}
+
+aside ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 40px auto;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    transition: 0.2s ease;
+}
+
+aside ul li i{
+    margin-right: 10px;
+}
+
+aside ul li a:hover{
+    color: #990000;
+    font-weight: 700;
+}
+
+#card-container {
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#content-card{
+    width: 90%;;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+#profile-post {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+}
+
+#profile-post h4 {
+    margin-top: 10px;
+}
+
+#profile-post img{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#profil-username {
+    font-size: 1rem;
+}
+
+.profil-btn {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+}
+
+#change-img {
+    width: 150px;
+    height: 30px;
+    color: #990000;
+}
+
+#change-img button {
+    border-radius: 5px;
+    border: 0.5px solid #990000;
+}
+
+#change-img button:hover {
+    background-color: #990000;
+    color: #ffffff;
+}
+
+#profil-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#profil-info hr {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 170px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#account-info hr {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 190px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    font-family: Montserrat;
+    width: 100%;
+    padding: 10px;
+}
+
+#profil-info {
+    margin-top: 10px;
+}
+
+#account-info {
+    font-size: 1rem;
+
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+}
+
+#show-uname{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#show-uname input {
+    width: auto;
+    right: 0;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#reset {
+    margin-right: 30px;
+    background-color: rgba(128, 128, 128, 0.411);
+    font-family: Montserrat;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    color: white;
+    background-color: grey;
+    transition: 0.2s ease;
+}
+
+#save {
+    background-color: rgba(128, 128, 128, 0.411);
+    font-family: Montserrat;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+#save:hover {
+    color: white;
+    background-color: #990000;
+    transition: 0.2s ease;
+}

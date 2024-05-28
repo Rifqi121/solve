@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    padding-left: 20vw;
+    padding-top: 120px;
+    background-color: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #990000;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    
+}
+
+#logo-header {
+    height: 60px;
+    margin: 12px 20px 12px 20px;
+}
+
+#search-container { 
+    display: flex;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#search {
+    border-radius: 20px;
+    border: none;
+    padding: 1px 20px;
+    height: 20px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+
+#profil {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+header form{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+aside {
+    background-color: transparent;
+    width: 20vw;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside ul li{
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-radius: 0.8rem;
+    width: 14vw;
+    transition: 0.2s ease;
+}
+
+aside ul li:hover {
+    background-color: #ced4da;
+    color: #990000;
+    cursor: pointer;
+}
+
+aside ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 40px auto;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    transition: 0.2s ease;
+}
+
+aside ul li i{
+    margin-right: 10px;
+}
+
+aside ul li a:hover{
+    color: #990000;
+    font-weight: 700;
+}
+
+#card-container {
+    position: relative;
+    width: 80vw;
+    height: 75vh;
+    display: flex;
+    justify-content: left;
+}
+
+.content-card{
+    position: relative;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#consultant-info {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 80px;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0 30px
+}
+
+#consultant-profile {
+    display: flex;
+    align-items: center;
+}
+
+#consultant-profile img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+#consultant-profile div {
+    margin-left: 12px;
+}
+
+#consultant-profile span {
+    font-weight: 700;
+}
+
+#consultant-profile p {
+    margin-top: 2px;
+    color: gray;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+#option {
+    position: relative;
+}
+
+#option > button {
+    height: 40px;
+    width:40px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.dropdown {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px -15px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown.dropdown-active {
+    visibility: visible;
+}
+
+.dropdown div {
+    text-align: center;
+}
+
+.dropdown div button {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    padding: 12px 10px 12px 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown div button:first-child {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.dropdown div button:last-child {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.dropdown div button:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#option > button:hover {
+    background-color: #ced4da;
+}
+
+#chat-section {
+    background-color: white;
+    border-top: 0.5px solid #ced4da;
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    width: 55%;
+}
+
+#consultation-info {
+    position: absolute;
+    border-radius: 20px;
+    background-image: linear-gradient(25deg, #ff2200d0 0%, #990000be 100%), url('../aset/upicibiru.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+}
+
+
+#tren{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+#modal-comment {
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    width: 55%;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+.comment-profile {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.comment-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.comment-input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 12px 0 12px;
+    background-color: #ced4da8c;
+}
+
+.comment-input input:focus {
+    border: 1px solid #0d6efd;
+}
+
+.comment-submit {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-submit button {
+    background-color: #0d6efd;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-submit button:hover {
+    background-color: #6ea8fe;
+}
+
+.post-comments {
+    background-color: white;
+    margin: 20px -20px -20px -20px;
+    padding-top: 20px;
+    border-top: 0.5px solid #ced4da;
+}
+
+.comment-section {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.comment-section.sender .comment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.comment-section.sender {
+    justify-content: right;
+}
+
+.comment-section .comment-profile {
+    align-items: start;
+}
+
+.comment-content {
+    margin-left: 2px;
+}
+
+.chat-date-info {
+    background-color: #ced4da;
+    padding: 6px 12px 6px 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 12px;
+    margin: 0px auto 20px auto;
+    width: 60px;
+}
+
+.bubble-chat {
+    background-color: #ced4da8c;
+    padding: 8px 14px 8px 14px;
+    width: fit-content;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
+
+}
+
+.bubble-chat span {
+    font-weight: 600;
+}
+
+.bubble-chat p {
+    margin-top: 2px;
+}
+
+.comment-info {
+    margin-top: 6px;
+    color: gray;
+    font-size: 0.7rem;
+    margin-left: 2px;
+}
+
+.chat-kosong {
+    color: gray;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+#consultation-info div {
+    height: 100%;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.92rem;
+}
+
+#consultation-info div h3 {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#consultation-info div p {
+    line-height: 22px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+#consultation-info div ul {
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+#consultation-info div ul li {
+    line-height: 22px;
+    margin-bottom: 8px;
+}
